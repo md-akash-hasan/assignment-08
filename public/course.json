@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://i.postimg.cc/example-course1.png",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Python for Data Science & Machine Learning",
+    "instructor": "Sarah Ahmed",
+    "duration": "35 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Master Python, Pandas, NumPy, and ML algorithms with real projects.",
+    "image": "https://i.postimg.cc/example-course2.png",
+    "category": "Data Science"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design Masterclass",
+    "instructor": "Emily Clark",
+    "duration": "18 hours",
+    "rating": 4.7,
+    "level": "Beginner",
+    "description": "Design stunning interfaces using Figma and modern UX principles.",
+    "image": "https://i.postimg.cc/example-course3.png",
+    "category": "Design"
+  },
+  {
+    "id": 4,
+    "title": "React.js Complete Guide",
+    "instructor": "James Wilson",
+    "duration": "28 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Build powerful React apps with Hooks, Redux, and React Router.",
+    "image": "https://i.postimg.cc/example-course4.png",
+    "category": "Development"
+  },
+  {
+    "id": 5,
+    "title": "Digital Marketing & SEO Masterclass",
+    "instructor": "Nadia Rahman",
+    "duration": "15 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Grow your business online with SEO, social media, and paid ads.",
+    "image": "https://i.postimg.cc/example-course5.png",
+    "category": "Marketing"
+  },
+  {
+    "id": 6,
+    "title": "Node.js & Express Backend Development",
+    "instructor": "Carlos Mendez",
+    "duration": "22 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Build scalable REST APIs and backend systems with Node.js.",
+    "image": "https://i.postimg.cc/example-course6.png",
+    "category": "Development"
+  },
+  {
+    "id": 7,
+    "title": "Cybersecurity Fundamentals",
+    "instructor": "Ali Hassan",
+    "duration": "25 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn ethical hacking, network security, and cyber threat defense.",
+    "image": "https://i.postimg.cc/example-course7.png",
+    "category": "Security"
+  },
+  {
+    "id": 8,
+    "title": "Advanced JavaScript & ES6+",
+    "instructor": "Priya Sharma",
+    "duration": "16 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Deep dive into closures, async/await, prototypes, and modern JS.",
+    "image": "https://i.postimg.cc/example-course8.png",
+    "category": "Development"
+  },
+  {
+    "id": 9,
+    "title": "Graphic Design with Adobe Illustrator",
+    "instructor": "Tom Baker",
+    "duration": "12 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Create logos, illustrations, and brand identities from scratch.",
+    "image": "https://i.postimg.cc/example-course9.png",
+    "category": "Design"
+  },
+  {
+    "id": 10,
+    "title": "Cloud Computing with AWS",
+    "instructor": "Mehdi Hossain",
+    "duration": "30 hours",
+    "rating": 4.8,
+    "level": "Advanced",
+    "description": "Deploy and manage applications on Amazon Web Services.",
+    "image": "https://i.postimg.cc/example-course10.png",
+    "category": "Cloud"
+  }
+]
