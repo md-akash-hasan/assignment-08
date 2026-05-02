@@ -7,7 +7,7 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-background pt-10 pb-6 px-6">
+    <footer className="w-full bg-background pt-10 pb-6 px-6 border-t border-divider">
       <div className="container px-2 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="flex flex-col gap-3">
@@ -23,31 +23,25 @@ export default function Footer() {
             <h3 className="text-lg font-bold">Social Links</h3>
             <div className="flex gap-4">
               <Link
-                isExternal
                 href="https://www.facebook.com/mdakahhasanpartho"
-                color="foreground"
-                className="flex gap-1 items-center"
+                className="flex gap-2 items-center text-default-500 hover:text-blue-600 transition-colors duration-300"
               >
                 <FaFacebookF />
-                Facebook
+                <span className="text-sm">Facebook</span>
               </Link>
               <Link
-                isExternal
                 href="#"
-                color="foreground"
-                className="flex gap-1 items-center"
+                className="flex gap-2 items-center text-default-500 hover:text-sky-400 transition-colors duration-300"
               >
                 <BsTwitter />
-                Twitter
+                <span className="text-sm">Twitter</span>
               </Link>
               <Link
-                isExternal
                 href="https://www.linkedin.com/feed/"
-                color="foreground"
-                className="flex gap-1 items-center"
+                className="flex gap-2 items-center text-default-500 hover:text-blue-700 transition-colors duration-300"
               >
                 <FaLinkedinIn />
-                LinkedIn
+                <span className="text-sm">LinkedIn</span>
               </Link>
             </div>
           </div>
@@ -61,16 +55,24 @@ export default function Footer() {
           </div>
         </div>
 
+        <hr className="border-divider mb-6" />
+
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-small text-default-400">
             © {new Date().getFullYear()} Your Skill. All rights reserved.
           </p>
 
           <div className="flex gap-6">
-            <Link href="#" size="sm" color="foreground">
+            <Link
+              href="#"
+              className="text-sm text-default-500 hover:text-foreground transition-all duration-200 underline-offset-4 hover:underline"
+            >
               Terms & Conditions
             </Link>
-            <Link href="#" size="sm" color="foreground">
+            <Link
+              href="#"
+              className="text-sm text-default-500 hover:text-foreground transition-all duration-200 underline-offset-4 hover:underline"
+            >
               Privacy Policy
             </Link>
           </div>

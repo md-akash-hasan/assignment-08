@@ -3,61 +3,51 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Globe } from "@gravity-ui/icons";
 import { usePathname } from "next/navigation";
+
 const NavPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  let path = usePathname();
+  const path = usePathname();
 
-  let li = (
+  // Reusable Link Style with Hover Animation
+  const navLinkClass = (href) => {
+    const isActive = path === href;
+    return `relative py-1 transition-all duration-300 ease-in-out
+      ${isActive ? "text-green-600" : "text-default-600 hover:text-green-500"}
+      after:content-[''] after:absolute after:left-0 after:bottom-0 
+      after:h-[2px] after:bg-green-500 after:transition-all after:duration-300
+      ${isActive ? "after:w-full" : "after:w-0 hover:after:w-full"}`;
+  };
+
+  const li = (
     <>
       <li>
-        <Link
-          href="/"
-          className={
-            path === "/"
-              ? "text-green-500 border-b-2 border-green-500 pb-1"
-              : ""
-          }
-        >
+        <Link href="/" className={navLinkClass("/")}>
           Home
         </Link>
       </li>
       <li>
-        <Link
-          href="/courses"
-          className={
-            path === "/courses"
-              ? "text-green-500 border-b-2 border-green-500 pb-1"
-              : ""
-          }
-        >
+        <Link href="/courses" className={navLinkClass("/courses")}>
           Courses
         </Link>
       </li>
       <li>
-        {" "}
-        <Link
-          href="/profile"
-          className={
-            path === "/profile"
-              ? "text-green-500 border-b-2 border-green-500 pb-1"
-              : ""
-          }
-        >
+        <Link href="/profile" className={navLinkClass("/profile")}>
           My Profile
         </Link>
       </li>
     </>
   );
+
   return (
-    <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg ">
-      <header className="flex h-16 items-center justify-between px-6 container  mx-auto">
+    <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
+      <header className="flex h-16 items-center justify-between px-6 container mx-auto">
         <div className="flex items-center gap-4">
+          {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden p-2 hover:bg-default-100 rounded-lg transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            <span className="sr-only">Menu</span>
             <svg
               className="h-6 w-6"
               fill="none"
@@ -81,21 +71,42 @@ const NavPage = () => {
               )}
             </svg>
           </button>
-          <div className="flex gap-2 items-center font-bold  text-yellow-500">
-            <Globe width={20} height={20} />
-            <h1 className="text-green-500">Skill</h1>
-          </div>
+
+          {/* Logo Section */}
+          <Link
+            href="/"
+            className="flex gap-2 items-center font-bold hover:opacity-80 transition-opacity"
+          >
+            <Globe className="text-yellow-500" width={24} height={24} />
+            <h1 className="text-xl text-green-600 tracking-tight">Skill</h1>
+          </Link>
         </div>
-        <ul className="hidden items-center gap-4 md:flex font-semibold">
+
+        {/* Desktop Navigation */}
+        <ul className="hidden items-center gap-8 md:flex font-semibold">
           {li}
         </ul>
-        <div className="font-semibold">sing in</div>
-      </header>
-      {isMenuOpen && (
-        <div className="border-t border-separator md:hidden">
-          <ul className="flex flex-col gap-2 p-4">{li}</ul>
+
+        {/* Right Section */}
+        <div className="flex items-center gap-4">
+          <button className="font-semibold text-sm px-4 py-2 hover:text-green-500 transition-colors">
+            Sign In
+          </button>
+          <button className="hidden md:block bg-green-500 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-green-600 hover:shadow-lg transition-all active:scale-95">
+            Get Started
+          </button>
         </div>
-      )}
+      </header>
+
+      {/* Mobile Menu Navigation */}
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden border-t border-separator
+          ${isMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
+      >
+        <ul className="flex flex-col gap-4 p-6 font-semibold bg-background">
+          {li}
+        </ul>
+      </div>
     </nav>
   );
 };
