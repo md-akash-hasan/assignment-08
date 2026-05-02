@@ -1,0 +1,36 @@
+import { CircleDollar } from "@gravity-ui/icons";
+import { Card, Link } from "@heroui/react";
+import Image from "next/image";
+
+const CourseCard = ({ data }) => {
+  console.log(data.image, data.title, data.id);
+  return (
+    <div>
+      <Card className="">
+        <div className=" ">
+          <Image src={data?.image} alt={data.title} height={50} width={50} />
+        </div>
+        <Card.Header>
+          <Card.Title>Become an Acme Creator!</Card.Title>
+          <Card.Description>
+            Visit the Acme Creator Hub to sign up today and start earning
+            credits from your fans and followers.
+          </Card.Description>
+        </Card.Header>
+        <Card.Footer>
+          <Link
+            aria-label="Go to Acme Creator Hub (opens in new tab)"
+            href="https://heroui.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Creator Hub
+            <Link.Icon aria-hidden="true" />
+          </Link>
+        </Card.Footer>
+      </Card>
+    </div>
+  );
+};
+
+export default CourseCard;

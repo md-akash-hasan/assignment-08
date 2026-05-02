@@ -7,7 +7,7 @@
     "rating": 4.8,
     "level": "Beginner",
     "description": "Learn full-stack web development from scratch.",
-    "image": "https://i.postimg.cc/example-course1.png",
+    "image": "https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525",
     "category": "Development"
   },
   {
@@ -18,7 +18,7 @@
     "rating": 4.9,
     "level": "Intermediate",
     "description": "Master Python, Pandas, NumPy, and ML algorithms with real projects.",
-    "image": "https://i.postimg.cc/example-course2.png",
+    "image": "https://images.unsplash.com/photo-1619410283995-43d9134e7656",
     "category": "Data Science"
   },
   {
@@ -28,8 +28,8 @@
     "duration": "18 hours",
     "rating": 4.7,
     "level": "Beginner",
-    "description": "Design stunning interfaces using Figma and modern UX principles.",
-    "image": "https://i.postimg.cc/example-course3.png",
+    "description": "Master Python, Pandas, NumPy, and ML algorithms with real projects.",
+    "image": "https://images.unsplash.com/photo-1619410283995-43d9134e7656",
     "category": "Design"
   },
   {
@@ -39,8 +39,8 @@
     "duration": "28 hours",
     "rating": 4.8,
     "level": "Intermediate",
-    "description": "Build powerful React apps with Hooks, Redux, and React Router.",
-    "image": "https://i.postimg.cc/example-course4.png",
+    "description": "Master Python, Pandas, NumPy, and ML algorithms with real projects.",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
     "category": "Development"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.6,
     "level": "Beginner",
     "description": "Grow your business online with SEO, social media, and paid ads.",
-    "image": "https://i.postimg.cc/example-course5.png",
+    "image": "https://plus.unsplash.com/premium_photo-1681841936830-c189242e8280",
     "category": "Marketing"
   },
   {
@@ -61,8 +61,8 @@
     "duration": "22 hours",
     "rating": 4.7,
     "level": "Intermediate",
-    "description": "Build scalable REST APIs and backend systems with Node.js.",
-    "image": "https://i.postimg.cc/example-course6.png",
+    "description": "Grow your business online with SEO, social media, and paid ads.",
+    "image": "https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775",
     "category": "Development"
   },
   {
@@ -72,8 +72,8 @@
     "duration": "25 hours",
     "rating": 4.5,
     "level": "Beginner",
-    "description": "Learn ethical hacking, network security, and cyber threat defense.",
-    "image": "https://i.postimg.cc/example-course7.png",
+    "description": "Grow your business online with SEO, social media, and paid ads.",
+    "image": "https://plus.unsplash.com/premium_photo-1733317239304-a6bf462a2596",
     "category": "Security"
   },
   {
@@ -83,8 +83,8 @@
     "duration": "16 hours",
     "rating": 4.9,
     "level": "Advanced",
-    "description": "Deep dive into closures, async/await, prototypes, and modern JS.",
-    "image": "https://i.postimg.cc/example-course8.png",
+    "description": "Create logos, illustrations, and brand identities from scratch",
+    "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea",
     "category": "Development"
   },
   {
@@ -95,7 +95,7 @@
     "rating": 4.6,
     "level": "Beginner",
     "description": "Create logos, illustrations, and brand identities from scratch.",
-    "image": "https://i.postimg.cc/example-course9.png",
+    "image": "https://images.unsplash.com/photo-1705490021082-d445bb3d4762",
     "category": "Design"
   },
   {
@@ -106,7 +106,7 @@
     "rating": 4.8,
     "level": "Advanced",
     "description": "Deploy and manage applications on Amazon Web Services.",
-    "image": "https://i.postimg.cc/example-course10.png",
+    "image": "https://plus.unsplash.com/premium_photo-1733306493254-52b143296396",
     "category": "Cloud"
   }
 ]
