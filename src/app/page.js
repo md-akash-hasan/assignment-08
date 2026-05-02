@@ -1,4 +1,7 @@
 import CourseCard from "@/components/CourseCard";
+import Instructor from "@/components/Instructor";
+import LearningTips from "@/components/LearningTips";
+import TimeManagement from "@/components/TimeManagement";
 import Image from "next/image";
 
 export default async function Home() {
@@ -43,12 +46,15 @@ export default async function Home() {
       </div>
       <div>
         <h1 className="course my-5 text-2xl font-bold">🔥 Popular Courses</h1>
-        <div className="grid grid-cols-3 gap-5 mb-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
           {datas.slice(0, 3).map((data) => (
             <CourseCard key={data.id} data={data} />
           ))}
         </div>
       </div>
+      <LearningTips />
+      <TimeManagement />
+      <Instructor />
     </div>
   );
 }

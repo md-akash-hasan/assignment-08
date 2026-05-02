@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 const NavPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   let path = usePathname();
-  console.log(path);
+
   let li = (
     <>
       <li>

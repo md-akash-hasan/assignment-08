@@ -1,19 +1,18 @@
 import { CircleDollar } from "@gravity-ui/icons";
-import { Button, Card } from "@heroui/react";
+import { Button, Card, Link } from "@heroui/react";
 import Image from "next/image";
-import Link from "next/link";
 
-const CourseCard = ({ data }) => {
+const CardDetels = ({ data }) => {
   console.log(data.image);
   return (
     <div>
-      <Card className="">
-        <div className="  relative aspect-square w-full h-[40vh] ">
+      <Card className="w-[60%] m-auto">
+        <div className="  relative aspect-square  h-[40vh] ">
           <Image
             src={data.image}
             alt={data.title}
             fill
-            className="rounded-2xl"
+            className="rounded-2xl  object-cover"
           />
           <h1 className="absolute top-3  right-3 text-white z-10 bg-sky-400 px-3 py- font-bold rounded-2xl ">
             {data.level}
@@ -26,16 +25,11 @@ const CourseCard = ({ data }) => {
             <h1 className="font-semibold ">{data.rating}</h1>
           </div>
         </Card.Header>
-        <Card.Footer>
-          <Link href={`/${data.id}`}>
-            <Button variant="primary" className="w-full font-bold">
-              Show Details
-            </Button>
-          </Link>
-        </Card.Footer>
+        <Card.Footer>{data.description}</Card.Footer>
+        <h1>{data.duration}</h1>
       </Card>
     </div>
   );
 };
 
-export default CourseCard;
+export default CardDetels;
