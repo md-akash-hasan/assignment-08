@@ -3,12 +3,12 @@ import { Card, Link } from "@heroui/react";
 import Image from "next/image";
 
 const CourseCard = ({ data }) => {
-  console.log(data.image, data.title, data.id);
+  console.log(data.image);
   return (
     <div>
       <Card className="">
-        <div className=" ">
-          <Image src={data?.image} alt={data.title} height={50} width={50} />
+        <div className=" relative w-full aspect-square ">
+          <Image src={data.image} alt={data.title} fill />
         </div>
         <Card.Header>
           <Card.Title>Become an Acme Creator!</Card.Title>
