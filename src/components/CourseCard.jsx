@@ -7,8 +7,13 @@ const CourseCard = ({ data }) => {
   return (
     <div>
       <Card className="">
-        <div className=" relative w-full aspect-square ">
-          <Image src={data.image} alt={data.title} fill />
+        <div className="  relative aspect-square w-full h-[40vh] ">
+          <Image
+            src={data.image}
+            alt={data.title}
+            fill
+            className="rounded-2xl"
+          />
         </div>
         <Card.Header>
           <Card.Title>Become an Acme Creator!</Card.Title>
