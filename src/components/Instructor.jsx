@@ -3,16 +3,17 @@ import React from "react";
 
 const Instructor = () => {
   return (
-    <div className="">
+    <div className=" my-10">
       <h1 className="text-2xl font-bold my-5">Top Instructor</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div className="shadow p-5 rounded-2xl">
-          <div className="relative aspect-square">
+          <div className="relative aspect-square h-50 w-50 m-auto my-5 ">
             <Image
-              src="https://www.linkedin.com/in/jhankar"
+              src="https://i.ibb.co.com/3yWJrJBw/1677507599579.jpg"
               alt="Jhankar Mahbub"
               fill
+              className="rounded-full"
             />
           </div>
           <h1 className="text-xl font-bold">Dr. Jhankar Mahbub</h1>
@@ -27,6 +28,14 @@ const Instructor = () => {
         </div>
 
         <div className="shadow p-5 rounded-2xl">
+          <div className="relative aspect-square h-50 w-50 m-auto my-5 ">
+            <Image
+              src="https://i.ibb.co.com/Z1hZjPHR/profile-picture.jpg"
+              alt="Prof. Sophia Marie Bennett"
+              fill
+              className="rounded-full"
+            />
+          </div>
           <h1 className="text-xl font-bold"> Prof. Sophia Marie Bennett</h1>
           <h3> Lead Online Course Facilitator</h3>
           <h4 className="font-bold">Experience: 8 Years</h4>
@@ -37,6 +46,14 @@ const Instructor = () => {
           </p>
         </div>
         <div className="shadow p-5 rounded-2xl">
+          <div className="relative aspect-square h-50 w-50 m-auto my-5 ">
+            <Image
+              src="https://i.ibb.co.com/qYr1nLd9/man-7796384-640.jpg"
+              alt="Mr. Daniel Ethan Brooks"
+              fill
+              className="rounded-full"
+            />
+          </div>
           <h1 className="text-xl font-bold">Mr. Daniel Ethan Brooks</h1>
           <h3> E-Learning Content Developer & Instructor</h3>
           <h4 className="font-bold">Experience: 5 Years</h4>

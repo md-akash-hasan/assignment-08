@@ -5,7 +5,7 @@ import Image from "next/image";
 const CardDetels = ({ data }) => {
   console.log(data.image);
   return (
-    <div>
+    <div className="my-10">
       <Card className="w-[60%] m-auto">
         <div className="  relative aspect-square  h-[40vh] ">
           <Image

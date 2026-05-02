@@ -47,7 +47,7 @@ export default async function Home() {
       <div>
         <h1 className="course my-5 text-2xl font-bold">🔥 Popular Courses</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
-          {datas.slice(0, 3).map((data) => (
+          {datas.slice(2, 5).map((data) => (
             <CourseCard key={data.id} data={data} />
           ))}
         </div>
