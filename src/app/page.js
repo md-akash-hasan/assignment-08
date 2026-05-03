@@ -1,3 +1,4 @@
+import ComingCourse from "@/components/ComingCourse";
 import CourseCard from "@/components/CourseCard";
 import Instructor from "@/components/Instructor";
 import LearningTips from "@/components/LearningTips";
@@ -56,6 +57,7 @@ export default async function Home() {
       </div>
       <LearningTips />
       <TimeManagement />
+      <ComingCourse />
       <Instructor />
     </div>
   );

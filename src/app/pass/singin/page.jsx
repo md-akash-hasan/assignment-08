@@ -44,7 +44,7 @@ const SinginPage = () => {
     <div className="flex justify-center my-10">
       <div className="shadow-lg p-8 rounded-3xl">
         <Form
-          className="flex w-96 flex-col gap-4  rounded-xl "
+          className="flex max-w-96 flex-col gap-4  rounded-xl "
           onSubmit={onSubmit}
         >
           <h2 className="text-2xl font-bold mb-2">Login Account</h2>
