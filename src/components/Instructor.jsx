@@ -8,7 +8,7 @@ const Instructor = () => {
         Top Instructor
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {/* Card 1 */}
         <div className="group shadow-md hover:shadow-xl p-6 rounded-2xl border border-transparent hover:border-primary/20 transition-all duration-300 hover:-translate-y-2 bg-white">
           <div className="relative aspect-square h-40 w-40 m-auto my-5 overflow-hidden rounded-full ring-0 group-hover:ring-4 ring-primary/20 transition-all duration-300">

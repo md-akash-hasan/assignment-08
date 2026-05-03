@@ -1,7 +1,7 @@
 const LearningTips = () => {
   return (
     <div className="mb-10 px-4">
-      <h1 className="text-2xl my-8 font-bold border-l-4 border-indigo-500 pl-4">
+      <h1 className="text-2xl my-8 text-center font-bold border-l-4 border-indigo-500 pl-4">
         Study Techniques
       </h1>
 

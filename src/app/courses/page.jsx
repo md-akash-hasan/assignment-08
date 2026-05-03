@@ -66,7 +66,7 @@ export default function CoursePage() {
         </div>
         <h1 className="course my-5 text-2xl font-bold">🔥 All Courses</h1>
         {filteredCourses.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {filteredCourses.map((data) => (
               <CourseCard key={data.id} data={data} />
             ))}
