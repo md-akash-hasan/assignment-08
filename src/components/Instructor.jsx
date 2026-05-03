@@ -4,7 +4,7 @@ import React from "react";
 const Instructor = () => {
   return (
     <div className="my-10 px-4">
-      <h1 className="text-2xl font-bold my-5 border-l-4 border-primary pl-3">
+      <h1 className="text-2xl font-bold my-5 border-l-4 border-primary pl-3 text-center">
         Top Instructor
       </h1>
 
