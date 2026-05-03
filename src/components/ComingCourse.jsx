@@ -20,7 +20,7 @@ const ComingCourse = () => {
   ];
 
   return (
-    <div className="my-10 px-4 max-w-7xl mx-auto">
+    <div className="my-10 px-4 mx-auto">
       <h1 className="text-4xl font-extrabold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-blue-600">
         Courses Coming Soon...
       </h1>
