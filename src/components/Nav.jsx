@@ -2,11 +2,21 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Globe } from "@gravity-ui/icons";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { authClient, signOut, useSession } from "@/lib/auth-client";
+import { Avatar, Button } from "@heroui/react";
+import { div } from "framer-motion/client";
 
 const NavPage = () => {
+  const router = useRouter();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const path = usePathname();
+
+  let { data, isPending } = useSession();
+
+  let userData = data?.user;
+  console.log(userData);
 
   // Reusable Link Style with Hover Animation
   const navLinkClass = (href) => {
@@ -88,13 +98,31 @@ const NavPage = () => {
         </ul>
 
         {/* Right Section */}
-        <div className="flex items-center gap-4">
-          <button className="font-semibold text-sm px-4 py-2 hover:text-green-500 transition-colors">
-            Sign In
-          </button>
-          <button className="hidden md:block bg-green-500 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-green-600 hover:shadow-lg transition-all active:scale-95">
-            Get Started
-          </button>
+        <div className="">
+          {userData ? (
+            <div className="flex gap-4">
+              <Avatar>
+                <Avatar.Image
+                  alt={userData?.name}
+                  className="line-clamp-1"
+                  src={userData?.image}
+                />
+                <Avatar.Fallback>{userData?.name}</Avatar.Fallback>
+              </Avatar>
+              <Button onClick={() => signOut()} variant="danger">
+                Log Out
+              </Button>
+            </div>
+          ) : (
+            <div className="flex gap-4">
+              <Button variant="primary">
+                <Link href="/pass/singin">Login </Link>
+              </Button>
+              <Button variant="primary">
+                <Link href="/pass/singup">Register </Link>
+              </Button>
+            </div>
+          )}
         </div>
       </header>
 

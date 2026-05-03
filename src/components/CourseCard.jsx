@@ -16,7 +16,7 @@ const CourseCard = ({ data }) => {
             src={data.image}
             alt={data.title}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-110"
+            className="object-cover   rounded-2xl  transition-transform duration-500 group-hover:scale-110 "
           />
           {/* Level Badge with Hover Glow */}
           <div className="absolute top-3 right-3 text-white z-20 bg-sky-400/90 backdrop-blur-sm px-3 py-1 font-bold rounded-full text-xs group-hover:bg-sky-500 transition-colors">

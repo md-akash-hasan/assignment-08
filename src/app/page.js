@@ -5,7 +5,9 @@ import TimeManagement from "@/components/TimeManagement";
 import Image from "next/image";
 
 export default async function Home() {
-  let res = await fetch("https://assignment-08-one.vercel.app/course.json");
+  let res = await fetch("https://assignment-08-one.vercel.app/course.json", {
+    cache: "no-store",
+  });
   let datas = await res.json();
 
   let li = (
