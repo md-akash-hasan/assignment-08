@@ -97,6 +97,7 @@ const CourseDetailsPage = ({ data }) => {
               </div>
 
               {/* <Divider className="my-4" /> */}
+              <div className="divider">OR</div>
 
               {/* Course Features */}
               <div className="space-y-4">
