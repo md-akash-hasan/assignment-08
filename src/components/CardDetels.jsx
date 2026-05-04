@@ -5,7 +5,7 @@ import {
   GraduationCap,
   Star,
 } from "@gravity-ui/icons";
-import { Button, Card, Divider, Chip } from "@heroui/react";
+import { Button, Card, Chip } from "@heroui/react";
 import Image from "next/image";
 
 const CourseDetailsPage = ({ data }) => {
@@ -96,7 +96,7 @@ const CourseDetailsPage = ({ data }) => {
                 </Button>
               </div>
 
-              <Divider className="my-4" />
+              {/* <Divider className="my-4" /> */}
 
               {/* Course Features */}
               <div className="space-y-4">
