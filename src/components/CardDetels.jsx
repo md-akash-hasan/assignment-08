@@ -7,7 +7,7 @@ const CardDetels = ({ data }) => {
     <div className="my-10 flex justify-center px-4">
       <Card
         isPressable
-        isHoverable
+        ishoverable
         className="max-w-[400px] w-full transition-transform duration-300 hover:scale-[1.02] group"
       >
         {/* Image Container - Height adjusted to be more natural */}

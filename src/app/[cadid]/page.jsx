@@ -23,9 +23,15 @@ const page = async ({ params }) => {
   let data = datas.find((data) => data.id == parseInt(cadid));
 
   return (
-    <div>
-      <CardDetels data={data}></CardDetels>
-    </div>
+    <>
+      {data ? (
+        <div>
+          <CardDetels data={data}></CardDetels>
+        </div>
+      ) : (
+        <h1>Not fount page </h1>
+      )}
+    </>
   );
 };
 
