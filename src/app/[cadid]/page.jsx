@@ -4,6 +4,7 @@ import React from "react";
 import { headers } from "next/headers";
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
+import NotFountPage from "@/components/NotFountPage";
 
 const page = async ({ params }) => {
   const session = await auth.api.getSession({
@@ -29,7 +30,7 @@ const page = async ({ params }) => {
           <CardDetels data={data}></CardDetels>
         </div>
       ) : (
-        <h1>Not fount page </h1>
+        <NotFountPage />
       )}
     </>
   );
