@@ -8,7 +8,7 @@ export default function NoCourse() {
       </h1>
       <p>
         তোমার search-এর সাথে কোনো course match করেনি। অন্য keyword বা topic try
-        করে দেখো।
+        করে দেখো।!!!
       </p>
     </div>
   );
