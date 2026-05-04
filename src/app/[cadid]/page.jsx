@@ -21,7 +21,7 @@ const page = async ({ params }) => {
   let res = await fetch("https://assignment-08-one.vercel.app/course.json");
   let datas = await res.json();
 
-  let data = datas.find((data) => data.id == parseInt(cadid));
+  let data = datas.find((data) => data.id == cadid);
 
   return (
     <>
